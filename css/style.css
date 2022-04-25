@@ -231,6 +231,7 @@ body {
 }
 .header__container ul {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
 .header__container ul a {
@@ -241,11 +242,15 @@ body {
   text-align: center;
   color: #ffffff;
 }
+.header__container ul a:hover {
+  color: #008abf;
+  transition: all 0.3s ease-in-out;
+}
 .header .login a {
   display: block;
   width: 161px;
   height: 43px;
-  background: #6415ff;
+  background: #00adef;
   border-radius: 100px;
   color: #fff;
   display: flex;
@@ -274,6 +279,8 @@ body {
   box-sizing: content-box;
 }
 .banner__container {
+  position: relative;
+  top: -10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,8 +299,9 @@ body {
 }
 .banner__container .head h3 {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 107%;
+  font-family: "Berkshire Swash", cursive;
   /* or 51px */
   text-align: center;
   letter-spacing: -0.04em;
@@ -303,6 +311,7 @@ body {
   color: #00adef;
 }
 .banner__container .des {
+  font-family: "Special Elite", cursive;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -313,14 +322,13 @@ body {
 .banner__container .buttons {
   display: flex;
   gap: 2rem;
-  margin-top: 1rem;
 }
 .banner__container .buttons a {
   font-weight: 600;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 24px;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   color: #ffffff;
   border-radius: 100px;
   transition: all 0.3s ease-in;
@@ -349,6 +357,7 @@ body {
 }
 
 .review {
+  margin-top: 8rem;
   overflow: hidden;
 }
 .review__container {
@@ -366,17 +375,20 @@ body {
   overflow: hidden;
 }
 .review__container .review__content .head h5 {
+  font-family: "Special Elite", cursive;
   font-weight: 500;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #e0e0e0;
 }
 .review__container .review__content .head h3 {
   font-weight: 600;
   font-size: 48px;
   line-height: 107%;
+  font-family: "Oleo Script", cursive;
+  margin: 0.5rem 0;
   /* or 51px */
   letter-spacing: -0.04em;
   color: #fff;
@@ -391,6 +403,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #e0e0e0;
+  font-family: "Special Elite", cursive;
 }
 .review__container .review__content .buttons {
   display: flex;
@@ -446,6 +459,7 @@ body {
   text-align: center;
   letter-spacing: -0.04em;
   color: #ffffff;
+  font-family: "Oleo Script", cursive;
 }
 .roadmap__container .roadmap__list {
   width: 800px;
@@ -697,6 +711,7 @@ body {
   letter-spacing: -0.04em;
   color: #ffffff;
   margin-bottom: 3rem;
+  font-family: "Berkshire Swash", cursive;
 }
 .tokenomic__container .img {
   margin-top: 3rem;
@@ -1008,29 +1023,35 @@ body {
   cursor: pointer;
 }
 .footer__container .foot {
-  margin: 3rem 0;
+  margin: 30rem 0 3rem 0;
 }
 .footer__container .foot__gr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+.footer__container .foot__gr .foot__it > img {
+  width: 180px;
+}
 .footer__container .foot__gr .foot__it h5 {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 2rem;
 }
 .footer__container .foot__gr .foot__it ul a {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.7);
 }
 .footer__container .foot__gr .foot__it .icon__gr {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  font-size: 2rem;
+  justify-content: center;
+  color: #fff;
 }
 .footer__container .foot__gr .foot__it .icon__gr > img {
   max-width: 40px;

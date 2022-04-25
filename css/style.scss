@@ -224,6 +224,7 @@ body {
 
         & ul {
             display: flex;
+            align-items: center;
             gap: 1.5rem;
             & a {
                 text-decoration: none;
@@ -232,6 +233,11 @@ body {
                 line-height: 21px;
                 text-align: center;
                 color: #ffffff;
+
+                &:hover {
+                    color: #008abf;
+                    transition: all 0.3s ease-in-out;
+                }
             }
         }
     }
@@ -241,7 +247,7 @@ body {
             display: block;
             width: 161px;
             height: 43px;
-            background: #6415ff;
+            background: #00adef;
             border-radius: 100px;
             color: #fff;
             display: flex;
@@ -273,6 +279,8 @@ body {
     align-items: center;
     box-sizing: content-box;
     &__container {
+        position: relative;
+        top: -10rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -293,8 +301,9 @@ body {
 
             & h3 {
                 font-weight: 600;
-                font-size: 48px;
+                font-size: 42px;
                 line-height: 107%;
+                font-family: 'Berkshire Swash', cursive;
                 /* or 51px */
 
                 text-align: center;
@@ -309,6 +318,7 @@ body {
         }
 
         & .des {
+            font-family: 'Special Elite', cursive;
             font-weight: 500;
             font-size: 14px;
             line-height: 21px;
@@ -320,13 +330,12 @@ body {
         & .buttons {
             display: flex;
             gap: 2rem;
-            margin-top: 1rem;
             & a {
                 font-weight: 600;
                 font-size: 16px;
-                line-height: 28px;
+                line-height: 24px;
                 text-align: center;
-                padding: 1rem 2rem;
+                padding: 0.8rem 1.8rem;
                 color: #ffffff;
                 border-radius: 100px;
                 transition: all 0.3s ease-in;
@@ -360,6 +369,7 @@ body {
 }
 
 .review {
+    margin-top: 8rem;
     overflow: hidden;
     &__container {
         display: grid;
@@ -384,18 +394,23 @@ body {
         & .review__content {
             & .head {
                 & h5 {
+                    font-family: 'Special Elite', cursive;
+
                     font-weight: 500;
                     font-size: 15px;
                     line-height: 28px;
                     letter-spacing: -0.04em;
                     text-transform: uppercase;
 
-                    color: #ffffff;
+                    color: #e0e0e0;
                 }
                 & h3 {
                     font-weight: 600;
                     font-size: 48px;
                     line-height: 107%;
+                    font-family: 'Oleo Script', cursive;
+                    margin: 0.5rem 0;
+
                     /* or 51px */
 
                     letter-spacing: -0.04em;
@@ -413,6 +428,7 @@ body {
                 font-size: 14px;
                 line-height: 21px;
                 color: #e0e0e0;
+                font-family: 'Special Elite', cursive;
             }
 
             & .buttons {
@@ -478,6 +494,7 @@ body {
             text-align: center;
             letter-spacing: -0.04em;
             color: #ffffff;
+            font-family: 'Oleo Script', cursive;
         }
 
         & .roadmap__list {
@@ -774,6 +791,7 @@ body {
             letter-spacing: -0.04em;
             color: #ffffff;
             margin-bottom: 3rem;
+            font-family: 'Berkshire Swash', cursive;
         }
 
         & .img {
@@ -1139,16 +1157,19 @@ body {
             }
         }
         & .foot {
-            margin: 3rem 0;
+            margin: 30rem 0 3rem 0;
             &__gr {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 1rem;
 
                 & .foot__it {
+                    & > img {
+                        width: 180px;
+                    }
                     & h5 {
                         font-weight: 600;
-                        font-size: 14px;
+                        font-size: 18px;
                         line-height: 28px;
                         color: #ffffff;
                         margin-bottom: 2rem;
@@ -1156,15 +1177,17 @@ body {
 
                     & ul a {
                         font-weight: 500;
-                        font-size: 14px;
+                        font-size: 16px;
                         line-height: 21px;
                         color: rgba(255, 255, 255, 0.7);
                     }
 
                     & .icon__gr {
                         display: flex;
-                        gap: 0.5rem;
-
+                        gap: 1rem;
+                        font-size: 2rem;
+                        justify-content: center;
+                        color: #fff;
                         & > img {
                             max-width: 40px;
                         }
