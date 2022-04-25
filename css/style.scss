@@ -143,7 +143,7 @@ img {
 }
 
 body {
-    background-image: url(./imgs/background.png);
+    background-image: url(../imgs/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -167,7 +167,7 @@ body {
         justify-content: space-between;
         align-items: center;
         & .logo img {
-            width: 121px;
+            width: 80px;
         }
 
         & .closeMN img {
@@ -264,7 +264,7 @@ body {
 .banner {
     position: relative;
     height: 904px;
-    background: url(./imgs/Background.Section-01.png);
+    background: url(../imgs/Background.Section-01.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -895,7 +895,7 @@ body {
                     rgba(0, 0, 0, 0.8) 47.33%,
                     rgba(114, 41, 255, 0.8) 100%
                 ),
-                url(./imgs/Rectangle\ 240.png);
+                url(../imgs/Rectangle\ 240.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1396,7 +1396,7 @@ body {
                         rgba(0, 0, 0, 0.5) 47.33%,
                         rgba(114, 41, 255, 0.5) 100%
                     ),
-                    url(./imgs/Rectangle\ 240.png);
+                    url(../imgs/Rectangle\ 240.png);
                 border-radius: 16px;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -1430,7 +1430,7 @@ body {
                     justify-content: center;
                     padding: 2rem;
                     position: relative;
-                    background-image: url(./imgs/Vector\ 107.png);
+                    background-image: url(../imgs/Vector\ 107.png);
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
@@ -2120,7 +2120,7 @@ body {
                             rgba(0, 0, 0, 0.5) 47.33%,
                             rgba(114, 41, 255, 0.5) 100%
                         ),
-                        url(./imgs/Rectangle\ 240.png);
+                        url(../imgs/Rectangle\ 240.png);
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -2200,6 +2200,6 @@ body {
 
 @media only screen and (max-width: 540px) {
     .banner {
-        background-image: url(./imgs/bgmobiletop.png);
+        background-image: url(../imgs/bgmobiletop.png);
     }
 }

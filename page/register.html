@@ -10,33 +10,34 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
             rel="stylesheet"
         />
-        <!-- <link
+        <link
             rel="stylesheet"
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-        /> -->
-        <link rel="stylesheet" href="./style.css" />
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="/css/style.css" />
         <title>Document</title>
     </head>
     <body>
         <div class="headerMB">
             <div class="head">
                 <div class="logo">
-                    <img src="./imgs/Group 33759.png" alt="" />
+                    <a href="/"><img src="/imgs/Group 33759.png" alt="" /></a>
                 </div>
                 <div class="closeMN">
-                    <img src="./imgs/Vector.svg" alt="" />
+                    <img src="/imgs/Vector.svg" alt="" />
                 </div>
             </div>
             <div class="navMB">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/news.html">News</a></li>
-                    <li><a href="/DetailNews.html">Audit</a></li>
+                    <li><a href="/page/news.html">News</a></li>
+                    <li><a href="/page/DetailNews.html">Audit</a></li>
                     <li><a href="/">Whitepaper</a></li>
                 </ul>
             </div>
             <div class="button">
-                <a href="./Rlogin.html">Login</a>
+                <a href="/page/Rlogin.html">Login</a>
             </div>
         </div>
         <header
@@ -48,20 +49,20 @@
         >
             <div class="header__container container">
                 <div class="logo">
-                    <a href="/"><img src="./imgs/Group 33759.png" alt="" /></a>
+                    <a href="/"><img src="/imgs/Group 33759.png" alt="" /></a>
                 </div>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/news.html">News</a></li>
-                    <li><a href="/DetailNews.html">Audit</a></li>
+                    <li><a href="/page/news.html">News</a></li>
+                    <li><a href="/page/DetailNews.html">Audit</a></li>
                     <li><a href="/">Whitepaper</a></li>
                 </ul>
                 <div class="login">
-                    <a href="./Rlogin.html"><span>Login</span></a>
+                    <a href="/page/Rlogin.html"><span>Login</span></a>
                 </div>
                 <div class="menuMB">
                     <img
-                        src="./imgs/menu_FILL0_wght400_GRAD0_opsz48 1.svg"
+                        src="/imgs/menu_FILL0_wght400_GRAD0_opsz48 1.svg"
                         alt=""
                     />
                 </div>
@@ -70,7 +71,7 @@
         <main>
             <div class="login__rd">
                 <div class="login__container container">
-                    <h4>Login</h4>
+                    <h4>Sign Up</h4>
                     <form action="">
                         <div class="form__gr">
                             <input
@@ -81,25 +82,51 @@
                         </div>
 
                         <div class="form__gr">
-                            <label for="">Password</label>
-                            <div class="form__ip">
-                                <input
-                                    type="text"
-                                    value="example@gmail.com"
-                                    class="checked"
-                                />
-                            </div>
+                            <label for="email">Email</label>
+                            <input
+                                id="email"
+                                type="text"
+                                value="example@gmail.com"
+                            />
                         </div>
 
                         <div class="form__gr">
-                            <button>Login</button>
+                            <div class="form-lb">
+                                <label for="">Username</label>
+                                <span>Username is invalid</span>
+                            </div>
+                            <input type="text" class="checked" />
+                        </div>
+
+                        <div class="form__gr">
+                            <label for="">Password</label>
+                            <input type="text" class="checked" />
+                        </div>
+                        <div class="form__gr">
+                            <label for="">Repassword</label>
+                            <input type="text" class="checked" />
+                        </div>
+
+                        <div class="form__gr">
+                            <label for="">Refaddress</label>
+                            <input type="text" class="checked" />
                         </div>
 
                         <div class="form__gr">
                             <p>
-                                <span>Don’t have an account yeat? </span>
-                                <a href="./register.html">Sign Up</a>
+                                <span>By continuing, you agree to our </span>
+                                <a href="/page/login.html"> Terms of Use</a>
                             </p>
+                        </div>
+
+                        <div class="form__gr">
+                            <div class="form-ca">
+                                <span>78953</span>
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="form__gr">
+                            <button>Login</button>
                         </div>
                     </form>
                 </div>
@@ -126,7 +153,7 @@
                         <div class="form-group">
                             <button>
                                 <span>Subscribe</span>
-                                <img src="./imgs/Group 33638.svg" alt="" />
+                                <img src="/imgs/Group 33638.svg" alt="" />
                             </button>
                         </div>
                     </div>
@@ -134,7 +161,7 @@
                 <div class="foot">
                     <div class="foot__gr">
                         <div class="foot__it">
-                            <img src="./imgs/Group 33759.png" alt="" />
+                            <img src="/imgs/Group 33759.png" alt="" />
                         </div>
                         <div class="foot__it">
                             <h5>Quick Links</h5>
@@ -154,12 +181,12 @@
                         <div class="foot__it">
                             <h5>Quick Links</h5>
                             <div class="icon__gr">
-                                <!-- <img src="./imgs/Path.svg" alt="" />
-                                <img src="./imgs/Path.svg" alt="" />
-                                <img src="./imgs/Path.svg" alt="" />
-                                <img src="./imgs/Path.svg" alt="" /> -->
+                                <!-- <img src="/imgs/Path.svg" alt="" />
+                                <img src="/imgs/Path.svg" alt="" />
+                                <img src="/imgs/Path.svg" alt="" />
+                                <img src="/imgs/Path.svg" alt="" /> -->
                                 <div class="">
-                                    <img src="./imgs/Social.png" alt="" />
+                                    <img src="/imgs/Social.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -170,6 +197,56 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                spaceBetween: 24,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                centeredSlides: true,
+                grabCursor: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true,
+                },
+            });
+            const btnMenuMB = document.querySelector('.menuMB');
+            const closeMN = document.querySelector('.closeMN');
+            const headerMB = document.querySelector('.headerMB');
+            const header = document.querySelector('header');
+
+            window.onscroll = () => {
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(23, 19, 35, 0.1)';
+                    header.style.backdropFilter = 'blur(10px)';
+                } else {
+                    header.style.background = 'rgba(23, 19, 35, 0.31)';
+                    header.style.backdropFilter = 'blur(40px)';
+                }
+            };
+
+            btnMenuMB.onclick = () => {
+                headerMB.style.transform = 'translateY(0)';
+            };
+            closeMN.onclick = () => {
+                headerMB.style.transform = 'translateY(-100%)';
+            };
+        </script>
 
         <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     </body>
