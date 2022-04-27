@@ -15,7 +15,6 @@ export const handleScrollHeader = () => {
     let scroll = 0;
     window.onscroll = () => {
         let scrollTop = window.scrollY;
-        console.log(scrollTop, scroll);
         if (scrollTop - scroll > 50) {
             header.style.transform = 'translateY(-100%)';
             scroll = scrollTop - 50;

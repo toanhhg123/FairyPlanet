@@ -1,4 +1,4 @@
-import { handleScollHeader } from './handleScrollHeader.js';
+import { handleScrollHeader } from './handleScrollHeader.js';
 window.onload = function () {
     var swiper = new Swiper('.mySwiper', {
         slidesPerView: 3,
@@ -22,5 +22,5 @@ window.onload = function () {
         },
     });
 
-    handleScollHeader();
+    handleScrollHeader();
 };
