@@ -708,39 +708,6 @@
             AOS.init();
         </script>
 
-        <script>
-            var swiper = new Swiper('.mySwiper', {
-                slidesPerView: 3,
-                spaceBetween: 24,
-                slidesPerGroup: 1,
-                loop: true,
-                loopFillGroupWithBlank: true,
-                centeredSlides: true,
-                grabCursor: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                autoplay: {
-                    delay: 1000,
-                    disableOnInteraction: true,
-                },
-            });
-            const btnMenuMB = document.querySelector('.menuMB');
-            const closeMN = document.querySelector('.closeMN');
-            const headerMB = document.querySelector('.headerMB');
-            const header = document.querySelector('header');
-
-            btnMenuMB.onclick = () => {
-                headerMB.style.transform = 'translateY(0)';
-            };
-            closeMN.onclick = () => {
-                headerMB.style.transform = 'translateY(-100%)';
-            };
-        </script>
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>
