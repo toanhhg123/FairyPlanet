@@ -1712,11 +1712,6 @@ body {
 // reposive
 
 @media only screen and (max-width: 1024px) {
-    .container {
-        width: 900px;
-        max-width: 90%;
-        margin: auto;
-    }
     .header {
         &__container {
             & ul {
