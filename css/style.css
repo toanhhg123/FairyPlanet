@@ -250,7 +250,7 @@ body {
   display: block;
   width: 161px;
   height: 43px;
-  background: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
   border-radius: 100px;
   color: #fff;
   display: flex;
