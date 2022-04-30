@@ -200,7 +200,7 @@ body {
 .headerMB .button a {
   display: block;
   color: #fff;
-  background: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
   border-radius: 100px;
   padding: 1rem 2.5rem;
   text-align: center;
@@ -268,8 +268,8 @@ body {
 
 .banner {
   position: relative;
-  height: 904px;
-  background: url(../imgs/background_section_01.png);
+  height: 950px;
+  background: url(../imgs/assets_top_section_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -308,7 +308,11 @@ body {
   color: #ffffff;
 }
 .banner__container .head h3 span {
-  color: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .banner__container .des {
   font-family: "Special Elite", cursive;
@@ -334,13 +338,14 @@ body {
   transition: all 0.3s ease-in;
 }
 .banner__container .buttons a:hover {
-  background-color: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
+  border-color: #9035dc !important;
 }
 .banner__container .buttons a:nth-child(1) {
-  background-color: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
 }
 .banner__container .buttons a:nth-child(2) {
-  border: 2px solid #00adef;
+  border: 2px solid #fff;
 }
 .banner::after {
   content: "";
@@ -360,7 +365,7 @@ body {
   margin-top: 8rem;
   overflow: hidden;
 }
-.review__container {
+.review__container .rv__top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -394,7 +399,11 @@ body {
   color: #fff;
 }
 .review__container .review__content .head h3 span {
-  color: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .review__container .review__content p {
   font-family: "Poppins";
@@ -421,25 +430,35 @@ body {
   padding: 1rem 2rem;
 }
 .review__container .review__content .buttons a:nth-child(1) {
-  background-color: #00adef;
+  background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
   border-radius: 100px;
 }
 .review__container .review__content .buttons a:nth-child(2) {
   text-decoration: underline;
 }
-.review__container .review__content .ratings {
+.review__container .ratings {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
-.review__container .review__content .ratings h5 {
+.review__container .ratings .rating-item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 2.5rem;
+}
+.review__container .ratings h5 {
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: -0.04em;
   color: #ffffff;
 }
-.review__container .review__content .ratings p {
+.review__container .ratings p {
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
@@ -692,6 +711,90 @@ body {
   border-radius: 50%;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.troadmap {
+  overflow: hidden;
+  margin-top: 6rem;
+}
+.troadmap > h3 {
+  font-family: "Oleo Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40px;
+  /* identical to box height, or 83% */
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.troadmap .t__rm {
+  background: url(../imgs/tree.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 1550px;
+  position: relative;
+}
+.troadmap .t__rm .t__rm__item {
+  padding: 1rem;
+  width: max-content;
+  max-width: 350px;
+  border-radius: 12px;
+  position: absolute;
+}
+.troadmap .t__rm .t__rm__item.tp-1 {
+  top: 150px;
+  left: 0;
+}
+.troadmap .t__rm .t__rm__item.tp-2 {
+  top: 400px;
+  right: 0;
+}
+.troadmap .t__rm .t__rm__item.tp-3 {
+  top: 500px;
+  left: 0;
+}
+.troadmap .t__rm .t__rm__item.tp-4 {
+  top: 750px;
+  right: 0;
+}
+.troadmap .t__rm .t__rm__item.tp-5 {
+  top: 900px;
+  left: 0;
+}
+.troadmap .t__rm .t__rm__item > h4 {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+.troadmap .t__rm .t__rm__item > ul {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.troadmap .t__rm .t__rm__item > ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+.troadmap .t__rm .t__rm__item > ul li::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(95.37deg, #6415ff 0%, #9035dc 49.03%, #f78297 97.45%);
+  border-radius: 50%;
 }
 
 .tokenomic {
@@ -1249,7 +1352,7 @@ body {
   left: 264px;
   top: 289px;
   padding: 1.5rem 1rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 47.33%, rgba(114, 41, 255, 0.5) 100%), url(../imgs/Rectangle\ 240.png);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 47.33%, rgba(114, 41, 255, 0.5) 100%), url(../imgs/rectangle_240.png);
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1279,7 +1382,7 @@ body {
   justify-content: center;
   padding: 2rem;
   position: relative;
-  background-image: url(../imgs/Vector\ 107.png);
+  background-image: url(../imgs/vector_107.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1649,32 +1752,12 @@ body {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    margin-top: 1rem;
-  }
-  .banner__container .buttons a {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-    padding: 1rem 2rem;
-    color: #ffffff;
-    border-radius: 100px;
-    transition: all 0.3s ease-in;
-  }
-  .banner__container .buttons a:hover {
-    background-color: #00adef;
-  }
-  .banner__container .buttons a:nth-child(1) {
-    background-color: #00adef;
-  }
-  .banner__container .buttons a:nth-child(2) {
-    border: 2px solid #00adef;
   }
 
   .review {
     margin-top: 3rem;
   }
-  .review__container {
+  .review__container .rv__top {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -1707,16 +1790,23 @@ body {
     color: #ffffff;
     padding: 1rem 2rem;
   }
-  .review__container .review__content .ratings {
-    display: flex;
-    justify-content: center;
+  .review__container .ratings .rating-item {
+    padding: 0.5rem 1rem;
   }
-  .review__container .review__content .ratings h5 {
-    font-size: 28px;
-    line-height: 32px;
+  .review__container .ratings h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
   }
-  .review__container .review__content .ratings p {
-    margin-top: 0;
+  .review__container .ratings p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 125% */
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #ffffff;
   }
 
   .roadmap__container .roadmap__list {
@@ -1736,6 +1826,7 @@ body {
     padding: 1rem;
     background: rgba(0, 0, 0, 0.32);
     border-radius: 20px;
+    margin-top: 5rem;
   }
   .tokenomic__container h3 {
     font-weight: 600;
@@ -1745,6 +1836,45 @@ body {
   }
   .tokenomic__container .img {
     margin-top: 3rem;
+  }
+
+  .troadmap {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  .troadmap .t__rm {
+    background: transparent;
+    position: static;
+  }
+  .troadmap .t__rm .t__rm__item {
+    padding: 1rem;
+    width: max-content;
+    max-width: 350px;
+    border-radius: 12px;
+    margin: 1rem auto;
+    position: static;
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 17px;
+  }
+  .troadmap .t__rm .t__rm__item.tp-1 {
+    top: 450px;
+    left: 0;
+  }
+  .troadmap .t__rm .t__rm__item.tp-2 {
+    top: 650px;
+    right: 0;
+  }
+  .troadmap .t__rm .t__rm__item.tp-3 {
+    top: 850px;
+    left: 0;
+  }
+  .troadmap .t__rm .t__rm__item.tp-4 {
+    top: 1100px;
+    right: 0;
+  }
+  .troadmap .t__rm .t__rm__item.tp-5 {
+    top: 1400px;
+    left: 0;
   }
 
   .footer {
@@ -1896,7 +2026,8 @@ body {
 }
 @media only screen and (max-width: 540px) {
   .banner {
-    background-image: url(../imgs/bgmobiletop.png);
+    background-image: url(../imgs/homepage_mobile.png);
+    height: 1200px;
   }
 }
 @media only screen and (max-width: 576px) {
