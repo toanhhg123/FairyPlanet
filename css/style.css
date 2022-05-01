@@ -1742,6 +1742,9 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .banner {
+    height: 1300px;
+  }
   .banner__container .head h5 {
     font-size: 14px;
   }
