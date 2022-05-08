@@ -850,6 +850,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   width: 380px;
+  max-width: 95%;
 }
 .games__container .swiper__card .sw-img {
   height: 300px;
