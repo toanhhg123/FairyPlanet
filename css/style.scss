@@ -1006,7 +1006,7 @@ body {
                 left: 0;
                 bottom: 0;
                 right: 0;
-                background: rgba(255, 255, 255, 0.03);
+                background: rgba(255, 255, 255, 0.1);
                 backdrop-filter: blur(30px);
 
                 & h5 {
@@ -2188,6 +2188,7 @@ body {
         & .t__rm {
             background: transparent;
             position: static;
+            height: max-content;
 
             & .t__rm__item {
                 padding: 1rem;
@@ -2418,7 +2419,7 @@ body {
 @media only screen and (max-width: 540px) {
     .banner {
         background-image: url(../imgs/homepage_mobile.png);
-        height: 1200px;
+        height: 1350px;
     }
 }
 
