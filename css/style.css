@@ -849,11 +849,15 @@ body {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  width: 380px;
 }
 .games__container .swiper__card .sw-img {
   height: 300px;
   max-height: 400px;
+}
+.games__container .swiper__card .sw-img img {
   object-fit: cover;
+  width: 100%;
 }
 .games__container .swiper__card .sw-content {
   padding: 1rem;

@@ -994,10 +994,15 @@ body {
             position: relative;
             border-radius: 16px;
             overflow: hidden;
+            width: 380px;
             & .sw-img {
                 height: 300px;
                 max-height: 400px;
-                object-fit: cover;
+
+                & img {
+                    object-fit: cover;
+                    width: 100%;
+                }
             }
 
             & .sw-content {
