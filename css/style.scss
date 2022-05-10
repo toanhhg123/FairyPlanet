@@ -279,7 +279,7 @@ body {
 // banner cssc
 .banner {
     position: relative;
-    height: 950px;
+    height: 1100px;
     background: url(../imgs/assets_top_section_1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -962,6 +962,15 @@ body {
 }
 
 // css games
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .games {
     margin-top: 6rem;
