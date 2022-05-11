@@ -158,6 +158,30 @@ body {
   background-size: cover;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
 .headerMB {
   position: fixed;
   background: rgba(23, 19, 35, 0.9);
@@ -816,18 +840,11 @@ body {
   margin-bottom: 3rem;
   font-family: "Berkshire Swash", cursive;
 }
-.tokenomic__container .token__tb {
-  margin-top: 2rem;
-  padding: 1rem;
-  font-weight: 500;
-  font-size: 12px;
-  overflow-x: auto;
-}
-.tokenomic__container .token__tb > h5 {
+.tokenomic__container > h5 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   color: #ffffff;
   width: max-content;
@@ -835,6 +852,13 @@ body {
   padding: 1rem;
   border: 2px solid #fff;
   border-radius: 50px;
+}
+.tokenomic__container .token__tb {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 12px;
+  overflow-x: auto;
 }
 .tokenomic__container .token__tb table {
   width: 800px;
