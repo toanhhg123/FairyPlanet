@@ -1969,9 +1969,11 @@ body {
 
     & .prs__gr {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: row;
         align-items: center;
         margin-bottom: 1rem;
+        gap: 2rem;
     }
 }
 
