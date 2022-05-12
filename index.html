@@ -53,7 +53,7 @@
                     </ul>
                 </div>
                 <div class="button">
-                    <a href="./page/invest.html">INVEST</a>
+                    <a href="./page/invest.html">LOGIN</a>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@
                     <li><a href="./page/DetailNews.html">Audit</a></li>
                     <li><a href="">Whitepaper</a></li>
                     <div class="login">
-                        <a href="./page/invest.html"><span>INVEST</span></a>
+                        <a href="./page/invest.html"><span>LOGIN</span></a>
                     </div>
                 </ul>
                 <div class="menuMB">
@@ -656,6 +656,7 @@
                     >
                         <img src="./imgs/tokenomics_2.png" alt="" />
                     </div>
+                    <!-- <div id="chartdiv"></div> -->
                 </div>
             </div>
             <div class="games" data-aos="fade-up" data-aos-duration="1000">
@@ -863,6 +864,10 @@
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
+                        <a href="https://web.telegram.org/z/#5018840331">
+                            <img src="./imgs/tele.jpg" alt="" />
+                            <span>Telegram</span>
+                        </a>
                         <h4>NEWSLETTER</h4>
                         <h3>Receive Transmissions</h3>
                         <p>
@@ -929,9 +934,68 @@
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="./lib/swiper.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <!-- <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
         <script>
             AOS.init();
         </script>
+        <!-- <script>
+            Highcharts.chart('chartdiv', {
+                chart: {
+                    type: 'pie',
+                    options3d: {
+                        enabled: true,
+                        alpha: 45,
+                        beta: 0,
+                    },
+                },
+                title: {
+                    text: 'Browser market shares at a specific website, 2014',
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%',
+                    },
+                },
+                tooltip: {
+                    pointFormat:
+                        '{series.name}: <b>{point.percentage:.1f}%</b>',
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 40,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.name}',
+                        },
+                    },
+                },
+                series: [
+                    {
+                        type: 'pie',
+                        name: 'Browser share',
+                        data: [
+                            ['Maketing: 10%', 10],
+                            ['Team: 10%', 10],
+
+                            ['Avisor: 2%', 2],
+                            ['Liquidity & Exchange: 7%', 7],
+                            ['Seed: 1%', 1],
+                            ['Private Sale: 5%', 5],
+                            ['Launchpad: 1%', 1],
+                            ['Reward Mining: 55%', 55],
+                        ],
+                    },
+                ],
+            });
+        </script> -->
 
         <script type="module" src="./js/main.js"></script>
     </body>
