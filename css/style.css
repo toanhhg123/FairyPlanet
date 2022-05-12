@@ -1680,28 +1680,40 @@ body {
   margin-bottom: 1rem;
 }
 
-.myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.inverst__wrap {
+  position: relative;
+  height: 100vh;
 }
 
-.invest {
-  position: relative;
+.myVideo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  z-index: 10;
+  height: 100%;
+  object-fit: cover;
 }
+
 .invest__container {
   position: relative;
-  height: 100%;
+}
+.invest__logo {
+  width: 120px;
+  padding: 1rem;
+  margin-left: auto;
+}
+.invest__logo a {
+  display: block;
+  width: 100%;
+}
+.invest__logo > img {
+  width: 100%;
 }
 .invest__content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding: 1rem 0;
+  margin-top: 10rem;
 }
 .invest__content .invest__cards {
   display: flex;
@@ -1762,19 +1774,6 @@ body {
   font-size: 18px;
   border-radius: 10px;
   text-align: center;
-}
-.invest__logo {
-  position: absolute;
-  right: 0%;
-  top: 0;
-  padding: 1rem;
-}
-.invest__logo a {
-  display: block;
-  width: 120px;
-}
-.invest__logo > img {
-  width: 100%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2219,6 +2218,10 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
+  .inverst__wrap {
+    height: max-content;
+  }
+
   .container {
     width: 100%;
   }
