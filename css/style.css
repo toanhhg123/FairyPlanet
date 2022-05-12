@@ -2218,12 +2218,13 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
-  .inverst__wrap {
-    height: max-content;
-  }
-
   .container {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .inverst__wrap {
+    height: auto;
   }
 }
 @media only screen and (min-width: 576px) {
