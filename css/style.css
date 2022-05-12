@@ -1680,6 +1680,104 @@ body {
   margin-bottom: 1rem;
 }
 
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.invest {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+.invest__container {
+  position: relative;
+  height: 100%;
+}
+.invest__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+.invest__content .invest__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.invest__content .invest__cards .invest__card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
+  border-radius: 1rem;
+  width: 300px;
+  max-width: 95%;
+}
+.invest__content .invest__cards .invest__card__head {
+  background-color: rgba(27, 102, 167, 0.5);
+  text-align: center;
+  padding: 0.8rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+}
+.invest__content .invest__cards .invest__card__content {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem 0.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.invest__content .invest__cards .invest__card__content p {
+  color: #1d6eb6;
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+.invest__content .invest__cards .invest__card__content p span {
+  color: #343434;
+  font-weight: 500;
+  font-size: 14px;
+}
+.invest__content .invest__cards .invest__card__content .invest__card__buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invest__content .invest__cards .invest__card__content .invest__card__buy > a {
+  width: 100%;
+  display: block;
+  color: #fff;
+  background-color: #00adef;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+.invest__logo {
+  position: absolute;
+  right: 0%;
+  top: 0;
+  padding: 1rem;
+}
+.invest__logo a {
+  display: block;
+  width: 120px;
+}
+.invest__logo > img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
   .header__container ul {
     display: none;
