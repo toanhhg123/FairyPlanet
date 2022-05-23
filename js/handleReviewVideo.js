@@ -7,6 +7,7 @@ export const handleVideoReview = () => {
     };
 
     iconClose.onclick = () => {
+        console.log(iconClose);
         rvModal.style.display = 'none';
     };
 
