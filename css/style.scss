@@ -420,7 +420,6 @@ body {
 }
 
 .review {
-    margin-top: 8rem;
     overflow: hidden;
 
     & .rv__modal {
@@ -449,18 +448,18 @@ body {
             right: 16px;
             font-size: 40px;
             color: #fff;
+            cursor: pointer;
+            &:hover {
+                color: #281f38;
+            }
         }
     }
 
     &__container {
         & .rv__top {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-            margin-top: 5rem;
-            width: 1024px;
+            width: 800px;
             max-width: 100%;
-            align-items: center;
+            margin: 0 auto;
         }
 
         & .review__video {
@@ -476,12 +475,6 @@ body {
             cursor: pointer;
 
             & .bn__video {
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                padding: 32px;
                 overflow: hidden;
                 & img {
                     width: 100%;
@@ -502,6 +495,7 @@ body {
         }
 
         & .review__content {
+            margin-top: 2rem;
             & .head {
                 & h5 {
                     font-family: 'Special Elite', cursive;
@@ -937,7 +931,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-        height: 1550px;
+        height: 1800px;
         position: relative;
 
         & .t__rm__item {
@@ -952,20 +946,20 @@ body {
             }
 
             &.tp-2 {
-                top: 400px;
+                top: 500px;
                 right: 0;
             }
             &.tp-3 {
-                top: 500px;
+                top: 600px;
                 left: 0;
             }
             &.tp-4 {
-                top: 750px;
+                top: 900px;
                 right: 0;
             }
 
             &.tp-5 {
-                top: 900px;
+                top: 1100px;
                 left: 0;
             }
 
