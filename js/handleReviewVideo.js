@@ -3,8 +3,11 @@ export const handleVideoReview = () => {
     const rvModal = document.querySelector('.rv__modal');
     const iconClose = document.querySelector('.rv__modal i');
     window.onclick = (e) => {
-        if (e.target === rvModal || e.target === iconClose)
-            rvModal.style.display = 'none';
+        if (e.target === rvModal) rvModal.style.display = 'none';
+    };
+
+    iconClose.onclick = () => {
+        rvModal.style.display = 'none';
     };
 
     reviewVideo.onclick = () => {
