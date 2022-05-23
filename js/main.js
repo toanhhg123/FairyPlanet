@@ -1,4 +1,5 @@
 import { handleScrollHeader } from './handleScrollHeader.js';
+import { handleVideoReview } from './handleReviewVideo.js';
 window.onload = function () {
     var swiper = new Swiper('.mySwiper', {
         slidesPerView: 3,
@@ -23,4 +24,5 @@ window.onload = function () {
     });
 
     handleScrollHeader();
+    handleVideoReview();
 };
