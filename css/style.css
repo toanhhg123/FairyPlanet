@@ -402,10 +402,14 @@ body {
   overflow: hidden;
   display: none;
 }
-.review .rv__modal iframe {
+.review .rv__modal div {
   width: 800px;
   height: 500px;
   max-width: 95%;
+}
+.review .rv__modal iframe {
+  width: 100%;
+  height: 100%;
 }
 .review .rv__modal i {
   position: absolute;

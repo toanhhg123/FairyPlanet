@@ -436,10 +436,15 @@ body {
         overflow: hidden;
         display: none;
 
-        & iframe {
+        & div {
             width: 800px;
             height: 500px;
             max-width: 95%;
+        }
+
+        & iframe {
+            width: 100%;
+            height: 100%;
         }
 
         & i {
