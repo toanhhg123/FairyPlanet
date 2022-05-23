@@ -1497,6 +1497,8 @@ body {
                         font-size: 16px;
                         line-height: 21px;
                         color: rgba(255, 255, 255, 0.7);
+                        display: block;
+                        padding: 6px 0;
                     }
 
                     & .icon__gr {
@@ -1514,12 +1516,18 @@ body {
         }
 
         & .bannel {
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+            gap: 20px;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 28px;
-            text-align: center;
             color: #ffffff;
             margin-bottom: 3rem;
+
+            & p {
+                font-size: 10px;
+            }
         }
     }
 }
@@ -2237,6 +2245,9 @@ body {
 
     .footer {
         &__container {
+            & .bannel {
+                grid-template-columns: 1fr;
+            }
             & .letter {
                 background: linear-gradient(
                     95.37deg,
