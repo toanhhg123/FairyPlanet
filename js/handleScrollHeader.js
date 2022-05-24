@@ -5,10 +5,10 @@ export const handleScrollHeader = () => {
     const header = document.querySelector('header');
 
     btnMenuMB.onclick = () => {
-        headerMB.style.transform = 'translateY(0)';
+        headerMB.style.transform = 'translateX(0)';
     };
     closeMN.onclick = () => {
-        headerMB.style.transform = 'translateY(-100%)';
+        headerMB.style.transform = 'translateX(100%)';
     };
 
     window.scroll(0, 0);

@@ -142,6 +142,11 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  height: inherit !important;
+}
+
 .container {
   width: 1200px;
   max-width: 95%;
@@ -184,7 +189,6 @@ body {
 
 .headerMB {
   position: fixed;
-  background: rgba(23, 19, 35, 0.9);
   top: 0;
   left: 0;
   right: 0;
@@ -192,11 +196,12 @@ body {
   z-index: 20;
   height: 100vh;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-100%);
+  transform: translateX(100%);
+  background: #171323;
+  backdrop-filter: blur(40px);
 }
 .headerMB .head {
   padding: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.17);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,10 +211,10 @@ body {
 }
 .headerMB .head .closeMN img {
   width: 1rem;
+  cursor: pointer;
 }
 .headerMB .navMB {
   margin-top: 1rem;
-  text-align: center;
   margin-bottom: 1rem;
 }
 .headerMB .navMB a {
@@ -217,19 +222,19 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   color: #ffffff;
-  padding: 0.5rem 0;
+  margin: 0.5rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
 }
 .headerMB .button a {
+  margin-top: 1rem;
+  margin-left: 2rem;
   display: block;
   color: #fff;
   background: linear-gradient(90deg, #6415ff 0%, #9035dc 45.83%, #f78297 100%);
-  border-radius: 100px;
+  border-radius: 10px;
   padding: 1rem 2.5rem;
-  text-align: center;
   width: max-content;
-  margin: auto;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -1052,7 +1057,6 @@ body {
 .dnew__container .dnew__img {
   margin-top: 3rem;
   margin-bottom: 2rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 47.33%, rgba(114, 41, 255, 0.8) 100%), url(../imgs/Rectangle\ 240.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1178,11 +1182,15 @@ body {
 }
 
 .footer {
+  overflow: hidden;
   margin-top: 5rem;
+  background-image: url("../imgs/wpp_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer__container .letter {
   padding: 2rem;
-  background: linear-gradient(95.37deg, #5da1ce 0%, #2d449d 97.45%);
   opacity: 0.9;
   border-radius: 6px;
   display: grid;
@@ -1317,7 +1325,6 @@ body {
   font-size: 14px;
   line-height: 28px;
   color: #ffffff;
-  margin-bottom: 3rem;
 }
 .footer__container .bannel p {
   font-size: 10px;
@@ -1695,7 +1702,7 @@ body {
 }
 
 .partners {
-  overflow: hidden;
+  overflow: auto;
   margin-top: 5rem !important;
 }
 .partners .prs__head {
@@ -1722,7 +1729,11 @@ body {
   flex-direction: row;
   align-items: center;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
   gap: 2rem;
+}
+.partners .prs__gr img {
+  width: 120px;
 }
 
 .inverst__wrap {
@@ -1880,6 +1891,182 @@ body {
   background: rgba(114, 41, 255, 0.5);
 }
 
+.wpp__wrap {
+  overflow: hidden;
+}
+
+.wpp__hd {
+  height: 60px;
+  position: fixed;
+  top: 8px;
+  left: 0;
+  right: 0;
+}
+.wpp__hd__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.wpp__hd .wpp__hd__menu > i {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal__wpp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+.nav__wpp {
+  position: fixed;
+  width: 0;
+  left: 8px;
+  top: 80px;
+  bottom: 16px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .nav__wpp {
+    width: 0%;
+  }
+}
+.nav__wpp .close-icon-wpp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+}
+.nav__wpp .nwpp__logo {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.nav__wpp .nwpp__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.nav__wpp .nwpp__menu ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav__wpp .nwpp__menu ul li > a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.nav__wpp .nwpp__menu ul li > a.active {
+  background: linear-gradient(99.84deg, #353d9e -12.67%, #33a9b7 96.57%);
+}
+.nav__wpp .nwpp__menu ul li > a:hover {
+  background: linear-gradient(99.84deg, #353d9e -12.67%, #33a9b7 96.57%);
+}
+
+.wpp {
+  transition: all 0.3s ease-in-out;
+  margin-top: 90px;
+  margin-left: 0;
+}
+@media screen and (max-width: 1024px) {
+  .wpp {
+    margin-left: 0;
+  }
+}
+.wpp__container {
+  color: #fff;
+}
+.wpp .wpp__blog {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+}
+.wpp .wpp__blog > h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wpp__head > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+  width: max-content;
+}
+.wpp__head > h2 span {
+  color: #00adef;
+}
+@media screen and (max-width: 1024px) {
+  .wpp__head > h2 {
+    font-size: 1.5rem;
+  }
+}
+.wpp__box {
+  margin-top: 3rem;
+  text-align: center;
+}
+.wpp__box > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.wpp__box > h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.wpp__box > p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+}
+.wpp__box > ul {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+.wpp__box > ul li::before {
+  content: "•";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #fff;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
 @media only screen and (max-width: 1024px) {
   .header__container ul {
     display: none;
@@ -1940,7 +2127,6 @@ body {
     grid-template-columns: 1fr;
   }
   .footer__container .letter {
-    background: linear-gradient(95.37deg, #5da1ce 0%, #2d449d 97.45%);
     opacity: 0.9;
     border-radius: 6px;
     display: grid;
@@ -2258,7 +2444,6 @@ body {
   }
   .views__container .views__watch .left {
     padding: 1.5rem 1rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 47.33%, rgba(114, 41, 255, 0.5) 100%), url(../imgs/Rectangle\ 240.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
