@@ -87,6 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -1185,9 +1186,26 @@ body {
   overflow: hidden;
   margin-top: 5rem;
   background-image: url("../imgs/wpp_1.png");
+  height: 1500px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 2000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 2500px;
+  }
+}
+.footer__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .footer__container .letter {
   padding: 2rem;
@@ -1328,6 +1346,8 @@ body {
 }
 .footer__container .bannel p {
   font-size: 10px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .login__rd {
@@ -1988,7 +2008,7 @@ body {
 
 .wpp {
   transition: all 0.3s ease-in-out;
-  margin-top: 90px;
+  padding-top: 90px;
   margin-left: 0;
 }
 @media screen and (max-width: 1024px) {

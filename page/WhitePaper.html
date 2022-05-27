@@ -54,19 +54,19 @@
                 <div class="nwpp__menu">
                     <ul>
                         <li>
-                            <a href="" class="active">
+                            <a href="#wpp1" class="wpp1 active">
                                 <i class="fa-solid fa-file-alt"></i>
                                 <span>White Paper</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#wpp2" class="wpp2">
                                 <i class="fa-solid fa-map"></i>
                                 <span>Roadmap</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#wpp3" class="wpp3">
                                 <i class="fa-solid fa-users"></i>
                                 <span>Team</span>
                             </a>
@@ -90,13 +90,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#vision" class="vision">
                                 <i class="fa-solid fa-glasses"></i>
                                 <span>Vision</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#Vision">
                                 <i class="fa-solid fa-graduation-cap"></i>
                                 <span>Mission</span>
                             </a>
@@ -159,7 +159,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="wpp">
+            <section id="wpp1" class="wpp">
                 <div class="wpp__container container">
                     <div class="wpp__head">
                         <h2>Fairyplanet <span>WhitePaper</span></h2>
@@ -1120,22 +1120,111 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="vision" class="wpp">
+                <div class="wpp__container container">
+                    <div class="wpp__head">
+                        <h2>VISION</h2>
+                    </div>
+
+                    <div class="wpp__blog">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="wpp__box text-center">
+                                    <p>
+                                        The Fairy planet vision is to
+                                        systematically and passionately work to
+                                        empower and uplift the lives of our
+                                        expansive community of gamers and
+                                        contributors. Our utilization of
+                                        constant learnings from the community
+                                        and contributors is intrinsically linked
+                                        to exploring opportunities within the
+                                        blockchain gaming metaverse to stimulate
+                                        yield generation as well as playing a
+                                        major role in ensuring the long term
+                                        sustainability of the blockchain gaming
+                                        space.
+                                    </p>
+                                    <p>
+                                        The Fairyplanet DAO has a wide range of
+                                        goals that, for now, have been
+                                        strategically optimized. This includes
+                                        focusing on making cryptocurrency and
+                                        tokens accessible through education by
+                                        other members of the community who have
+                                        already gained sufficient knowledge and
+                                        understand its power to make an impact.
+                                        This initiative has already enabled
+                                        thousands of people around the globe,
+                                        from all walks of life, to enter the
+                                        blockchain metaverse and improved the
+                                        lives of those facing adversity. The
+                                        community promotes its own growth with
+                                        scope to enrich as much of the world as
+                                        they possibly can, as the consensus is
+                                        that Fairyplanet DAO is a foundation for
+                                        a better world.
+                                    </p>
+                                    <p>
+                                        As we shift the focus to the future, our
+                                        aspiration is to achieve an environment
+                                        where ownership of NFT’s, tokens and
+                                        cryptocurrency is widely adopted in a
+                                        multitude of gaming and non-gaming
+                                        mediums. The Fairyplanet DAO plans on
+                                        partnering up with blockchain based game
+                                        developers to develop engaging content
+                                        for both casual and professional gamers.
+                                    </p>
+                                    <p>
+                                        The Fairyplanet aims eventually to be a
+                                        community builder for new games
+                                        utilizing game agnostic scholarship
+                                        management technology to scale
+                                        operations across multiple games, and to
+                                        become a portal to the emergence of
+                                        metaverses. Through the support that the
+                                        Fairyplanet platform will provide the
+                                        wider community by creating blockchain
+                                        ecosystems for games, there will be many
+                                        yield generating functions that will
+                                        follow, benefiting Fairyplanet DAO
+                                        members and $FRP token holders.
+                                    </p>
+                                    <p>
+                                        The utility of the platform as described
+                                        will make the DAO the largest community
+                                        in blockchain gaming, for gamers ranging
+                                        from casual players all the way through
+                                        to the competitive stage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <script>
             const showNavWpp = () => {
                 const nav = document.querySelector('.nav__wpp');
-                const wpp = document.querySelector('.wpp');
+                const wpps = document.querySelectorAll('.wpp');
                 nav.style.width = '300px';
-                wpp.style.marginLeft = '300px';
+                wpps.forEach((wpp) => {
+                    wpp.style.marginLeft = '300px';
+                });
             };
 
-            const hideNavWpp = () => {
+            const hidenNavWpp = () => {
                 const nav = document.querySelector('.nav__wpp');
-                const wpp = document.querySelector('.wpp');
+                const wpps = document.querySelectorAll('.wpp');
                 nav.style.width = '0';
-                wpp.style.marginLeft = '0';
+                wpps.forEach((wpp) => {
+                    wpp.style.marginLeft = '0';
+                });
             };
 
             const iconShowNav = document.querySelector('.wpp__hd__menu');
@@ -1148,16 +1237,15 @@
             });
 
             close.addEventListener('click', () => {
-                hideNavWpp();
+                hidenNavWpp();
                 modal.style.display = 'none';
             });
 
-            window.addEventListener('click', (e) => {
-                if (e.target == modal) {
-                    hideNavWpp();
-                    modal.style.display = 'none';
-                }
-            });
+            modal.onclick = () => {
+                modal.style.display = 'none';
+                hidenNavWpp();
+            };
         </script>
+        <script src="../js/wpp.js"></script>
     </body>
 </html>
