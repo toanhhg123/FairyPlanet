@@ -2405,7 +2405,8 @@ body {
         & > ul {
             list-style: none;
             margin-bottom: 0.5rem;
-            margin-left: 1.5rem;
+            margin-left: 1.2rem;
+            font-size: 0.8rem;
             & li {
                 margin-bottom: 0.5rem;
             }
@@ -2418,6 +2419,15 @@ body {
             display: inline-block; /* Needed to add space between the bullet and the text */
             width: 1em; /* Also needed for space (tweak if needed) */
             margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+
+        & a {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.2rem;
+            display: block;
+            width: max-content;
+            margin-bottom: 1rem;
         }
     }
 }

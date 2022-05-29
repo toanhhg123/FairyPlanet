@@ -2102,7 +2102,8 @@ body {
 .wpp__box > ul {
   list-style: none;
   margin-bottom: 0.5rem;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
+  font-size: 0.8rem;
 }
 .wpp__box > ul li {
   margin-bottom: 0.5rem;
@@ -2120,6 +2121,14 @@ body {
   /* Also needed for space (tweak if needed) */
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
+}
+.wpp__box a {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  display: block;
+  width: max-content;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1024px) {
