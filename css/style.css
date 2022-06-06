@@ -1961,6 +1961,25 @@ body {
   cursor: pointer;
 }
 
+main {
+  min-height: 100vh;
+}
+
+.cms {
+  margin-top: 10rem;
+  text-align: center;
+}
+.cms__container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4rem 0;
+  border-radius: 2rem;
+}
+.cms__container h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 .modal__wpp {
   position: fixed;
   top: 0;
