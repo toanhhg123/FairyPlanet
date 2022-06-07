@@ -364,7 +364,50 @@
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="../js/main.js"></script>
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                spaceBetween: 24,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                centeredSlides: true,
+                grabCursor: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true,
+                },
+            });
+            const btnMenuMB = document.querySelector('.menuMB');
+            const closeMN = document.querySelector('.closeMN');
+            const headerMB = document.querySelector('.headerMB');
+            const header = document.querySelector('header');
 
+            window.onscroll = () => {
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(23, 19, 35, 0.1)';
+                    header.style.backdropFilter = 'blur(10px)';
+                } else {
+                    header.style.background = 'rgba(23, 19, 35, 0.31)';
+                    header.style.backdropFilter = 'blur(40px)';
+                }
+            };
+
+            btnMenuMB.onclick = () => {
+                headerMB.style.transform = 'translateX(0)';
+            };
+            closeMN.onclick = () => {
+                headerMB.style.transform = 'translateX(-100%)';
+            };
+        </script>
         <script>
             AOS.init();
         </script>
