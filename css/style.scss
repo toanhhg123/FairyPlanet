@@ -153,6 +153,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+html,
+body {
+    height: inherit !important;
+}
 // css header
 
 :root {
@@ -496,12 +500,6 @@ body {
         }
 
         & .review__video {
-            background: linear-gradient(
-                    0deg,
-                    rgba(40, 29, 58, 0.27),
-                    rgba(40, 29, 58, 0.27)
-                ),
-                url(image.png);
             border-radius: 15px;
             overflow: hidden;
             position: relative;
@@ -1894,7 +1892,7 @@ body {
             margin: auto;
         }
 
-        & form {
+        & .form {
             width: 100%;
             text-align: left;
 
@@ -2450,7 +2448,8 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        & > a {
+                        & > a,
+                        button {
                             width: 100%;
                             display: block;
                             color: #fff;

@@ -164,6 +164,11 @@ body {
   background-size: cover;
 }
 
+html,
+body {
+  height: inherit !important;
+}
+
 :root {
   --bg-body: rgba(32, 32, 32, 1);
   --bg-body-image: radial-gradient(
@@ -456,7 +461,6 @@ body {
   margin: 0 auto;
 }
 .review__container .review__video {
-  background: linear-gradient(0deg, rgba(40, 29, 58, 0.27), rgba(40, 29, 58, 0.27)), url(image.png);
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -1646,14 +1650,14 @@ body {
   width: max-content;
   margin: auto;
 }
-.login__rd .login__container form {
+.login__rd .login__container .form {
   width: 100%;
   text-align: left;
 }
-.login__rd .login__container form .form__gr {
+.login__rd .login__container .form .form__gr {
   margin: 2rem 0;
 }
-.login__rd .login__container form .form__gr input {
+.login__rd .login__container .form .form__gr input {
   display: block;
   width: 100%;
   border: none;
@@ -1666,14 +1670,14 @@ body {
   font-size: 12px;
   line-height: 18px;
 }
-.login__rd .login__container form .form__gr input.transparent {
+.login__rd .login__container .form .form__gr input.transparent {
   background: #352f51;
   color: rgba(255, 255, 255, 0.5);
 }
-.login__rd .login__container form .form__gr .form__ip {
+.login__rd .login__container .form .form__gr .form__ip {
   position: relative;
 }
-.login__rd .login__container form .form__gr .form__ip::after {
+.login__rd .login__container .form .form__gr .form__ip::after {
   content: "✔ ";
   position: absolute;
   color: #009d63;
@@ -1682,23 +1686,23 @@ body {
   transform: translateY(-50%);
   font-size: 1.5rem;
 }
-.login__rd .login__container form .form__gr label {
+.login__rd .login__container .form .form__gr label {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #e0e0e0;
 }
-.login__rd .login__container form .form__gr p {
+.login__rd .login__container .form .form__gr p {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
 }
-.login__rd .login__container form .form__gr p a {
+.login__rd .login__container .form .form__gr p a {
   color: #00adef;
 }
-.login__rd .login__container form .form__gr button {
+.login__rd .login__container .form .form__gr button {
   width: 100%;
   background-color: #00adef;
   padding: 0.5rem;
@@ -1712,18 +1716,18 @@ body {
   letter-spacing: -0.04em;
   color: #fff;
 }
-.login__rd .login__container form .form__gr .form-lb {
+.login__rd .login__container .form .form__gr .form-lb {
   display: flex;
   justify-content: space-between;
 }
-.login__rd .login__container form .form__gr .form-lb span {
+.login__rd .login__container .form .form__gr .form-lb span {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
   text-align: right;
   color: #fa3f61;
 }
-.login__rd .login__container form .form__gr .form-ca {
+.login__rd .login__container .form .form__gr .form-ca {
   padding: 2rem 1rem;
   background: #281f38;
   border-radius: 6px;
@@ -1731,7 +1735,7 @@ body {
   align-items: center;
   gap: 1rem;
 }
-.login__rd .login__container form .form__gr .form-ca span {
+.login__rd .login__container .form .form__gr .form-ca span {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -2133,7 +2137,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.invest__content .invest__cards .invest__card__content .invest__card__buy > a {
+.invest__content .invest__cards .invest__card__content .invest__card__buy > a,
+.invest__content .invest__cards .invest__card__content .invest__card__buy button {
   width: 100%;
   display: block;
   color: #fff;
