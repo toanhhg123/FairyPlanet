@@ -2194,6 +2194,7 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 1rem;
+            row-gap: 2rem;
 
             & .views__item {
                 height: 100%;
